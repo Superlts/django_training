@@ -1,0 +1,21 @@
+body {
+     background: url("../img/body.jpg") center;
+}
+main {
+    width: 960px;
+    background: url("../img/container.jpg") repeat-y;
+    min-height: 100vh
+}
+#header {
+    background: url("../img/header.jpg") no-repeat;
+    height: 346px;
+}
+.content h1 {
+    text-align: center;
+    padding: 150px 0px 0px 0px;
+}
+.content p {
+    text-align: center;
+    margin: 10px 80px;
+    font-size: 15px;
+}
