@@ -15,7 +15,10 @@
                 <p> {{ el|upper }} </p>
             {% endfor %}
             <br>
-            <br>
+            {# Это комментарий в шаблоне, он не выводится #}
+            {% for el in book %}
+                <p> {{ el.name }} </p>
+            {% endfor %}
             <br>
             </div>
         </div>

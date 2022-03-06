@@ -1,8 +1,10 @@
 from django.shortcuts import render
-
+from .models import Book
 
 def index(request):
+    book = Book.objects.all()
     data = {
+        'book': book,
         'head': 'Дзен Python',
         'values': [
             'Красивое лучше уродливого.', 'Явное лучше неявного.', 'Простое лучше сложного.',
