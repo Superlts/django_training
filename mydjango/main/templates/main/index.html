@@ -7,21 +7,23 @@
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
-    <main>
-        <div id="header">
-            <div class="content">
-            <h1> {{ head }} </h1>
-            {% for el in values %}
-                <p> {{ el|upper }} </p>
-            {% endfor %}
-            <br>
-            {# Это комментарий в шаблоне, он не выводится #}
-            {% for el in book %}
-                <p> {{ el.name }} </p>
-            {% endfor %}
-            <br>
+    <div align="center">
+        <div id="wrapper">
+            <div id="header">
+                <div class="content">
+                <h1> {{ head }} </h1>
+                {% for el in values %}
+                    <p> {{ el|upper }} </p>
+                {% endfor %}
+                <br>
+                {# Это комментарий в шаблоне, он не выводится #}
+                {% for el in book %}
+                    <p> {{ el.name }} </p>
+                {% endfor %}
+                <br>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 </html>
