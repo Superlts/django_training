@@ -1,10 +1,9 @@
 from django.shortcuts import render
-from .models import Book
+from .models import Book, Review
+
 
 def index(request):
-    book = Book.objects.all()
     data = {
-        'book': book,
         'head': 'Дзен Python',
         'values': [
             'Красивое лучше уродливого.', 'Явное лучше неявного.', 'Простое лучше сложного.',
@@ -21,3 +20,9 @@ def index(request):
         ]
     }
     return render(request, 'main/index.html', data)
+
+def book_detail(request, book_id):
+    #return HttpResponse(f'Your book id is {book_id}')
+    book = Book.objects.get(id=book_id)
+    review = Review.objects.all()
+    return render(request, 'main/book_detail.html', {'book_id': book_id, 'book': book, 'review': review})

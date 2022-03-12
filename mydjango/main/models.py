@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 class Book(models.Model):
@@ -12,3 +13,15 @@ class Book(models.Model):
     class Meta:
         verbose_name = 'Книга'
         verbose_name_plural = "Книги"
+
+class Review(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    text = models.TextField()
+
+    def __str__(self):
+        return f'{self.book}, {self.user}'
+
+    class Meta:
+        verbose_name = 'Отзыв'
+        verbose_name_plural = "Отзывы"
