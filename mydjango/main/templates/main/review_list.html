@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Все отзывы{% endblock %}
+
+{% block content %}
+    <div class="card">
+    {% for el in reviews %}
+    <h1> User: {{ el.user }} </h1>
+    <h3> Book: {{ el.book }}</h3>
+    <h3> Review: {{ el.text }}</h3>
+    {% endfor %}
+    </div>
+{% endblock %}

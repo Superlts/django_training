@@ -24,3 +24,13 @@ body {
     margin: 10px 80px;
     font-size: 15px;
 }
+.card {
+    float: left;
+    clear:both;
+    width: 700px;
+    margin: 20px 20%;
+    text-align: left;
+}
+.card p {
+    font-size: 18px;
+}

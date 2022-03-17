@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Книги{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1> Book name: {{ book.name }} </h1>
+    <h2> Book id: {{ book.id }}</h2>
+    <h3> Book price: {{ book.price }} $</h3>
+    <h3> Pages number: {{ book.pages_number }}</h3>
+    <h3> Description: {{ book.description }}</h3>
+    <h3><b> Отзывы о книге {{ el.book }}: </b> </h3>
+    {% for el in review %}
+        <div class="">
+        <span> {{ user }} </span>
+        <p>{{ el.text }} </p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
