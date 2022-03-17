@@ -1,0 +1,50 @@
+body {
+    background-color: #2c2c2c;
+}
+aside {
+	float: left;
+	background-color: #181818;
+	width: 20%;
+	padding: 2.5%;
+	height: 100vh;
+	color: #fff;
+	border-right: 5px solid #4d4d4d;
+
+}
+aside h3 {
+	margin-top: 50px;
+	font-size: 28px;
+}
+aside ul {list-style:none;}
+aside ul li {
+	color: #fff;
+	display:block;
+	margin-top: 20px;
+	transition: transform .6s ease;
+	text-decoration: none;
+}
+aside ul li:hover, aside ul a:hover {
+	color: #eb5959;
+	text-decoration: none;
+	transform: scale(1.05);
+}
+.book-form input, .book-form textarea{
+    margin: 10px auto;
+    display: block;
+    width: 60%;
+}
+.book-form label {
+    width: 60%;
+    margin: 0 auto;
+    display:block;
+    color: #fff;
+    position: relative;
+    top: 35px;
+}
+.card {
+     text-align: center;
+     width: 60%;
+     border: 3px solid #666; /* Параметры рамки */
+     padding: 10px; /* Поля вокруг текста */
+     margin: 10px; /* Отступы вокруг */
+}

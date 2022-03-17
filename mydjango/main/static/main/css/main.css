@@ -1,10 +1,15 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
 body {
      background: url("../img/body.jpg") center;
 }
-main {
+#wrapper {
+    text-align: center;
     width: 960px;
     background: url("../img/container.jpg") repeat-y;
-    min-height: 100vh
+    min-height: 860px;
 }
 #header {
     background: url("../img/header.jpg") no-repeat;
@@ -18,4 +23,14 @@ main {
     text-align: center;
     margin: 10px 80px;
     font-size: 15px;
+}
+.card {
+    float: left;
+    clear:both;
+    width: 700px;
+    margin: 20px 20%;
+    text-align: left;
+}
+.card p {
+    font-size: 18px;
 }
