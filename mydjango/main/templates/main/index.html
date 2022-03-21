@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная страница</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}">
-</head>
-<body>
-    <div align="center">
-        <div id="wrapper">
-            <div id="header">
-                <div class="content">
-                <h1> {{ head }} </h1>
-                    {% for el in values %}
-                    <p> {{ el|upper }} </p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
+{% extends 'main/base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{%block content%}
+<div class="review card">
+    <div class="index-img">
+    <h1> Travellers' Choice: Отзывы об отелях и отели рядом со мной</h1>
     </div>
-</body>
-</html>
+ </div>
+{% endblock %}

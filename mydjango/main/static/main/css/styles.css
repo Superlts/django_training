@@ -1,50 +1,50 @@
 body {
-    background-color: #2c2c2c;
+    /*background-color: lightskyblue;*/
 }
-aside {
-	float: left;
-	background-color: #181818;
-	width: 20%;
-	padding: 2.5%;
-	height: 100vh;
-	color: #fff;
-	border-right: 5px solid #4d4d4d;
+.main {
+    /*background-color: darksalmon;*/
+    width: 60%;
+    margin: 0 auto;
+}
+.review {
+    /*background-color: burlywood;*/
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+textarea {
+    height: 80px;
+}
+.book-form input, .book-form textarea{
+    /*background-color: gold;*/
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+    border-radius: 20px;
 
 }
-aside h3 {
-	margin-top: 50px;
-	font-size: 28px;
+.book-form label {
+    width: 80%;
+    margin: 0 auto;
+    display:block;
 }
-aside ul {list-style:none;}
-aside ul li {
-	color: #fff;
+
+.index-img {
+    background: url("../img/dsf.jpg") no-repeat;
+    height: 716px;
+}
+.index-img h1 {
+    font-family: 'Comic Sans MS';
+    font-size: 28px;
+    width: 60%;
+    margin: 20px auto;
+}
+ul li {
 	display:block;
-	margin-top: 20px;
 	transition: transform .6s ease;
 	text-decoration: none;
 }
-aside ul li:hover, aside ul a:hover {
-	color: #eb5959;
+ul li:hover, aside ul a:hover {
 	text-decoration: none;
 	transform: scale(1.05);
-}
-.book-form input, .book-form textarea{
-    margin: 10px auto;
-    display: block;
-    width: 60%;
-}
-.book-form label {
-    width: 60%;
-    margin: 0 auto;
-    display:block;
-    color: #fff;
-    position: relative;
-    top: 35px;
-}
-.card {
-     text-align: center;
-     width: 60%;
-     border: 3px solid #666; /* Параметры рамки */
-     padding: 10px; /* Поля вокруг текста */
-     margin: 10px; /* Отступы вокруг */
 }
