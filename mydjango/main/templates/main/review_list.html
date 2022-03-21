@@ -2,12 +2,17 @@
 
 {% block title %}Все отзывы{% endblock %}
 
-{% block content %}
-    <div class="card">
-    {% for el in reviews %}
-    <h1> User: {{ el.user }} </h1>
-    <h3> Book: {{ el.book }}</h3>
-    <h3> Review: {{ el.text }}</h3>
-    {% endfor %}
+{%block content%}
+{% for review in reviews %}
+    <div class="review card">
+      <div class="card-header">
+        {{review.id}}
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">User: {{review.user}}</li>
+        <li class="list-group-item">{{review.text}}</li>
+        <li class="list-group-item">Book: {{review.book}}</li>
+      </ul>
     </div>
+{% endfor %}
 {% endblock %}
