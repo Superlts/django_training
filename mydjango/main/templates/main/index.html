@@ -2,10 +2,9 @@
 
 {% block title %}Главная страница{% endblock %}
 
-{%block content%}
-<div class="review card">
-    <div class="index-img">
-    <h1> Travellers' Choice: Отзывы об отелях и отели рядом со мной</h1>
-    </div>
- </div>
+{% block content %}
+    <h1> {{ head }} </h1>
+    {% for el in values %}
+        <p> {{ el|upper }} </p>
+    {% endfor %}
 {% endblock %}
