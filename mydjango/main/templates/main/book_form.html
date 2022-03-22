@@ -1,0 +1,9 @@
+{% extends 'main/base.html'%}
+
+{% block content %}
+<form action="add_book" method="post" class="book-form">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Добавить книгу">
+</form>
+{% endblock %}

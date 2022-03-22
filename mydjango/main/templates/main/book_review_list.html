@@ -3,11 +3,16 @@
 {% block title %}Отзывы на книгу{% endblock %}
 
 {% block content %}
-    <div class="card">
+    <div class="review card">
     {% for el in reviews %}
-    <h1> User: {{ el.user }} </h1>
-    <h3> Book: {{ el.book }}</h3>
-    <h3> Review: {{ el.text }}</h3>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">User: {{ el.user }}</li>
+        <li class="list-group-item">Book: {{ el.book }}</li>
+        <li class="list-group-item">Review: {{ el.text }}</li>
+    </ul>
     {% endfor %}
     </div>
 {% endblock %}
+
+
+
